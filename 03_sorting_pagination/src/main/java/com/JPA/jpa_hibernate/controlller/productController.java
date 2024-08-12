@@ -58,6 +58,11 @@ public class productController {
     /* now combining all knowledge we known about sorting and paging.. */
 
     int PAGE_SIZE=5;
+     
+    //http://localhost:8080/products?sortBy=price&pageNumber=1
+    // NOTE: we can change the sortBy according to our choice that what order we want
+    // in a single page print data according to PAGE_SIZE
+
     @GetMapping
     public List<productEntity>ResponseData(
                         @RequestParam(defaultValue = "") String title,
